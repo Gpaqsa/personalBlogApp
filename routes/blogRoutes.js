@@ -2,7 +2,6 @@ const express = require("express");
 const router = express.Router();
 const db = require("../db"); // MySQL connection
 
-
 // Route to get all blogs
 router.get("/api/blogs", (req, res) => {
   db.query("SELECT * FROM blogs", (err, results) => {
